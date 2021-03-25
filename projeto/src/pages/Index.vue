@@ -64,7 +64,7 @@
           <p class="text-h6"> 
             Recebeu mais de 8000 doações essa semana
           </p>
-          <q-icon size="120px" name="img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
+          <img src="../assets/organizations/instituto-apae.png" alt="" class="card-img">
         </div>
 
         <!-- Organization -->
@@ -72,7 +72,7 @@
           <p class="text-h6"> 
             Recebeu mais de 8000 doações essa semana
           </p>
-          <q-icon size="120px" name="img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
+          <img src="../assets/organizations/instituto-cancerInfantil.png" alt="" class="card-img">
         </div>
 
         <!-- Organization -->
@@ -80,7 +80,7 @@
           <p class="text-h6"> 
             Recebeu mais de 8000 doações essa semana
           </p>
-          <q-icon size="120px" name="img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
+          <img src="../assets/organizations/instituto-luisaMel.png" alt="" class="card-img">
         </div>
       </div>
     </section>
@@ -88,7 +88,7 @@
     <!-- Campaigns -->
     <section class="q-pa-xl">
       <!-- Section title -->
-      <h1 class="text-h4 text-center text-primary q-mt-none">
+      <h1 class="text-h4 text-center text-primary">
         Campanhas mais populares da semana
       </h1>
 
@@ -150,11 +150,20 @@ export default {
   }
 }
 </script>
-<style>
+
+<style scoped>
 /* Carousel */
 /* Carousel */
 .carousel-slide{
   background-size: 100% 100%;
+}
+
+
+
+/* Organizations */
+/* Cards */
+.card-img{
+  width: 100%;
 }
 
 

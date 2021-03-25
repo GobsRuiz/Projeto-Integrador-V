@@ -27,9 +27,9 @@
 
         <div class="mobile-hide">
           <q-btn to="/" label="Início" flat rounded class="text-h5"></q-btn>
-          <q-btn to="/sobre" label="Organizações" flat rounded class="text-h5"></q-btn>
-          <q-btn to="/sobre" label="Campanhas" flat rounded class="text-h5"></q-btn>
-          <q-btn to="/sobre" label="Contato" flat rounded class="text-h5"></q-btn>
+          <q-btn to="/organizações" label="Organizações" flat rounded class="text-h5"></q-btn>
+          <q-btn to="/campanhas" label="Campanhas" flat rounded class="text-h5"></q-btn>
+          <q-btn to="/contato" label="Contato" flat rounded class="text-h5"></q-btn>
           <q-btn to="/sobre" label="Sobre" flat rounded class="text-h5"></q-btn>
         </div>
       </q-toolbar>
@@ -57,9 +57,14 @@
       </q-list>
     </q-drawer>
 
+
+
+    <!-- Main -->
     <q-page-container>
       <router-view />
     </q-page-container>
+
+
 
     <!-- Footer -->
     <q-footer id="footer">
