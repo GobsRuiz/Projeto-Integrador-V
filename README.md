@@ -1,3 +1,9 @@
+Projeto do quinto semestre da faculdade(FATEC), utilizando o Quasar.
+
+Trello: https://trello.com/b/2T3BuBFY/projeto-integrador-v
+
+---------------------------------------------------------------------
+
 # Quasar App (projeto)
 
 A Quasar Framework app
