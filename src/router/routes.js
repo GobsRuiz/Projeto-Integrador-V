@@ -15,6 +15,13 @@ const routes = [
     ]
   },
   {
+    path: '/campanhas',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Campaigns.vue') }
+    ]
+  },
+  {
     path: '/sobre',
     component: () => import('layouts/MainLayout.vue'),
     children: [
