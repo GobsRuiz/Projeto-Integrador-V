@@ -6,7 +6,7 @@
   "author": "Gabriel Ruiz <51479498+GobsRuiz@users.noreply.github.com>",
   "private": true,
   "scripts": {
-    "start": "quasar dev",
+    "dev": "quasar dev",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
