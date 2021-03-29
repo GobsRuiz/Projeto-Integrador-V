@@ -3,7 +3,7 @@
     <!-- Header -->
     <q-header elevated>
       <!-- Social networking -->
-      <q-toolbar id="toolbar1" class="justify-center">
+      <q-toolbar id="toolbar1" class="justify-center bg-light-blue-6 gt-xs">
         <q-btn to="/sobre" icon-right="facebook" label="Nos siga no facebook" flat rounded />
         <q-btn to="/sobre" icon-right="instagram" label="E no instagram" flat rounded />
         <q-btn to="/sobre" icon-right="mail" label="Ou nos envie um e-mail" flat rounded />
@@ -40,14 +40,11 @@
       v-model="leftDrawerOpen"
       bordered
       content-class="bg-grey-1"
-      class="desktop-hide"
+      class="desktop-hide flex items-center"
+      id="drawer"
     >
-      <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-        </q-item-label>
+      <q-list class="q-pt-sm">
+        <!-- Menu -->
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
@@ -55,6 +52,13 @@
           class="text-h5"
         />
       </q-list>
+
+      <!-- Social networking -->
+      <q-toolbar id="drawer-socialNetwork" class="column bg-light-blue-6 q-pa-md">
+        <q-btn to="/sobre" icon-right="facebook" label="Nos siga no facebook" flat rounded class="text-white" />
+        <q-btn to="/sobre" icon-right="instagram" label="E no instagram" flat rounded class="text-white" />
+        <q-btn to="/sobre" icon-right="mail" label="Ou nos envie um e-mail" flat rounded class="text-white" />
+      </q-toolbar>
     </q-drawer>
 
 
@@ -76,16 +80,16 @@
       <!-- Content -->
       <div id="footer-content" class="flex items-center justify-between bg-primary q-pa-md">
         <!-- Links || menu -->
-        <div class="column">
+        <nav id="footer-content-menu" class="flex column">
           <q-btn to="/" label="Início" flat rounded class="text-h6"></q-btn>
           <q-btn to="/sobre" label="Organizações" flat rounded class="text-h6"></q-btn>
           <q-btn to="/sobre" label="Campanhas" flat rounded class="text-h6"></q-btn>
           <q-btn to="/sobre" label="Contato" flat rounded class="text-h6"></q-btn>
           <q-btn to="/sobre" label="Sobre" flat rounded class="text-h6"></q-btn>
-        </div>  
+        </nav>  
         
         <!-- Social networks -->
-        <div class="row">
+        <div class="row justify-center">
           <div class="column items-center">
             <q-btn to="/sobre" label="Nos siga no facebook" flat rounded class="text-h6" />
             <q-icon name="facebook" class="text-h4" />
@@ -102,8 +106,8 @@
       </div>
 
       <!-- Copyright -->
-      <div id="footer-copyright" class="q-py-lg">
-        <p class="text-black text-center text-h4" style="margin: 0;">
+      <div id="footer-copyright" class="q-py-lg q-px-md">
+        <p class="text-black text-center text-h4 q-ma-none">
           Centro de doações - 2021 - Todos os direitos reservados ©
         </p>
       </div>
@@ -155,15 +159,6 @@ export default {
 </script>
 
 <style>
-/* Toolbar1 */
-#toolbar1{
-  background-color: #00A5F7;
-}
-
-
-
-
-
 /* Toolbar2 */
 #toolbar2{
   background-image: url("../assets/header/background-menu.svg");
@@ -174,6 +169,20 @@ export default {
 /* Logo */
 #toolbar2-logo img{
   width: 300px;
+}
+
+
+
+/* Drawer */
+.q-drawer__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Social network */
+#drawer-socialNetwork{
+  display: none;
 }
 
 
@@ -198,5 +207,40 @@ export default {
   background-image: url("../assets/header/background-menu.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+
+
+
+/* Responsive */
+/* 1000 */
+@media (max-width: 1000px) {
+  /* Footer */
+  #footer-content{
+    flex-direction: column;
+  }
+
+  /* Menu */
+  #footer-content-menu{
+    justify-content: center;
+    flex-direction: row;
+    
+    border-bottom: 2px solid rgb(30, 30, 30);
+  }
+}
+
+/* 600px */
+@media (max-width: 600px) {
+  /* Drawer */
+  /* Social network */
+  #drawer-socialNetwork{
+    display: block;
+  }
+}
+
+/* 370 */
+@media (max-width: 370px) {
+  /* Drawer */
 }
 </style>

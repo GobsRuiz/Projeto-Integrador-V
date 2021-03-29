@@ -13,13 +13,11 @@
       height="500px"
     >
       <q-carousel-slide class="carousel-slide flex justify-center items-center" name="first" img-src="../assets/carousel/banner1.png">
-        <div class="text-center" style="width: 30%">
-          <div class="text-h2 text-white">First stop</div>
+        <div class="carousel-slide-content text-center q-px-xl">
+          <div class="text-h2 text-white">Tchau, calor!</div>
           <p class="text-subtitle1 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Deserunt distinctio nisi officia? Vero, id nulla eius maxime 
-            amet repudiandae earum saepe expedita distinctio inventore, 
-            reiciendis ipsam incidunt voluptate? Laudantium, ea.
+            Ajude o Lar São Vicente de Paulo a arrecadar verba para comprar climatizadores para melhor
+            qualidade de vida para nossos veteranos.
           </p>
           <q-btn color="white" style="border-radius: 15px;" class="text-red q-py-md" label="clique para participar"></q-btn>
         </div>
@@ -53,14 +51,14 @@
     <!-- Organizations -->
     <section class="q-pa-xl">
       <!-- Section title -->
-      <h1 class="text-h4 text-center text-primary q-mt-none">
+      <h1 class="text-h4 text-center text-light-blue-6 q-mt-none">
         Instituições mais procuradas essa semana
       </h1>
 
       <!-- Text and image -->
-      <div class="row justify-around">
+      <div class="cards row justify-around" id="organizations-cards">
         <!-- Organization -->
-        <div class="text-center col-3">
+        <div class="organizations-card text-center q-pa-md col-sm-4 col-md-3">
           <p class="text-h6"> 
             Recebeu mais de 8000 doações essa semana
           </p>
@@ -68,7 +66,7 @@
         </div>
 
         <!-- Organization -->
-        <div class="text-center col-3">
+        <div class="organizations-card text-center q-pa-md col-sm-4 col-md-3">
           <p class="text-h6"> 
             Recebeu mais de 8000 doações essa semana
           </p>
@@ -76,7 +74,7 @@
         </div>
 
         <!-- Organization -->
-        <div class="text-center col-3">
+        <div class="organizations-card text-center q-pa-md col-sm-4 col-md-3">
           <p class="text-h6"> 
             Recebeu mais de 8000 doações essa semana
           </p>
@@ -88,14 +86,14 @@
     <!-- Campaigns -->
     <section class="q-pa-xl">
       <!-- Section title -->
-      <h1 class="text-h4 text-center text-primary">
+      <h1 class="text-h4 text-center text-light-blue-6">
         Campanhas mais populares da semana
       </h1>
 
       <!-- Texts and image -->
-      <div class="row justify-around">
+      <div class="cards row justify-around" id="campaigns-cards">
         <!-- Campaign -->
-        <div class="text-center col-3">
+        <div class="campaigns-card text-center col-sm-4 col-md-3">
           <h3 class="text-red text-h5">
             Compra de respiradores para Taquaritinga
           </h3>
@@ -106,7 +104,7 @@
         </div>
 
         <!-- Campaign -->
-        <div class="text-center col-3">
+        <div class="campaigns-card text-center col-sm-4 col-md-3">
           <h3 class="text-red text-h5">
             Compra de agasalho para moradores de rua
           </h3>
@@ -117,7 +115,7 @@
         </div>
 
         <!-- Campaign -->
-        <div class="text-center col-3">
+        <div class="campaigns-card text-center col-sm-4 col-md-3">
           <h3 class="text-red text-h5">
             Compra de alimentos para Orfanato XYZ
           </h3>
@@ -153,18 +151,26 @@ export default {
 
 <style scoped>
 /* Carousel */
-/* Carousel */
 .carousel-slide{
   background-size: 100% 100%;
 }
 
+/* Content */
+.carousel-slide-content{
+  width: 450px;
+}
 
 
-/* Organizations */
+
+
+
+/* Organizations and divulgations */
 /* Cards */
 .card-img{
   width: 100%;
 }
+
+
 
 
 
@@ -179,5 +185,55 @@ export default {
 }
 #divulgation-content button{
   transform: translateY(40px);
+}
+
+
+
+
+
+/* Responsive */
+/* 600 */
+@media (max-width: 600px){
+  /* Carousel */
+  /* Content */
+  .carousel-slide-content{
+    width: 300px;
+  }
+
+
+
+  /* Organizations and campaigns */
+  /* Cards */
+  #organizations-cards,
+  #campaigns-cards{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: unset;
+
+    overflow-x: scroll;
+  }
+  
+  /* Card */
+  #organizations-cards .organizations-card,
+  #campaigns-cards .campaigns-card{
+    min-width: 100%;
+  }
+  /* img */
+  #organizations-cards .organizations-card img,
+  #campaigns-cards .campaigns-card img{
+    width: 200px;
+    height: 200px;
+  }
+}       
+
+/* 450 */
+@media (max-width: 450px){
+  /* Carousel */
+  /* Content */
+  /* p */
+  .carousel-slide-content p{
+    height: 80px;
+    overflow: scroll;
+  }
 }
 </style>
