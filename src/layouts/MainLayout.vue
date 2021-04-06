@@ -255,7 +255,7 @@ export default {
   /* logo */
   /* Logo */
   #toolbar2-logo img{
-    width: 180px;
+    width: 170px;
   }
 
 
