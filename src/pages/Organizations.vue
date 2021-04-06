@@ -1,29 +1,29 @@
 <template>
   <q-page class="q-py-xl">
     <!-- Title -->
-    <h1 class="text-h3 textColor-blue text-center q-mb-xl q-px-md">
+    <h1 id="organizations-title" class="text-h3 textColor-blue text-center q-mb-xl q-px-md">
       Organizações em busca de ajuda
     </h1>
 
     <!-- Search field -->
     <div id="divSearch" style="width: 80%; margin: 0 auto;" class="text-center">
         <!-- > xs -->
-      <q-input debounce="500" filled placeholder="Search" class="bg-white gt-xs">
-        <template v-slot:prepend>
-          <q-icon
-            name="search"
-            class="bg-light-blue-6 text-white q-pa-md q-px-xl gt-xs"
-            style="transform: translateX(-12px)"
-          />
-        </template>
-        <template v-slot:after>
-          <q-icon
-            name=""
-            class="bg-light-blue-6 text-white q-pa-md q-px-xl gt-xs"
-            style="transform: translateX(-12px)"
-          />
-        </template>
-      </q-input>
+        <q-input debounce="500" filled placeholder="Search" class="bg-white">
+            <template v-slot:prepend>
+            <q-icon
+                name="search"
+                class="bg-light-blue-6 text-white q-pa-md q-px-xl gt-xs"
+                style="transform: translateX(-12px)"
+            />
+            </template>
+            <template v-slot:after>
+            <q-icon
+                name=""
+                class="bg-light-blue-6 text-white q-pa-md q-px-xl gt-xs"
+                style="transform: translateX(-12px)"
+            />
+            </template>
+        </q-input>
 
         <!-- xs < -->
         <q-btn id="divSearch-mobileBtn" class="bg-light-blue-6 q-px-md q-py-xs">
@@ -161,7 +161,7 @@ export default {};
 
 /* Cards */
 .card-img {
-  width: 100%;
+  width: 80%;
 }
 
 
@@ -169,8 +169,16 @@ export default {};
 
 
 /* Responsive */
-/* 700 */
+/* 600 */
 @media (max-width: 600px) {
+
+    /* Title */
+    #organizations-title{
+        font-size: 34px;
+    }
+
+
+
     /* Search */
     /* Mobile button */
     #divSearch-mobileBtn{
