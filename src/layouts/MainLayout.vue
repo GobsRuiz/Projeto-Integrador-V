@@ -89,7 +89,7 @@
         </nav>  
         
         <!-- Social networks -->
-        <div class="row justify-center">
+        <div id="footer-content-socialNetworks" class="row justify-center">
           <div class="column items-center">
             <q-btn to="/sobre" label="Nos siga no facebook" flat rounded class="text-h6" />
             <q-icon name="facebook" class="text-h4" />
@@ -237,10 +237,33 @@ export default {
   #drawer-socialNetwork{
     display: block;
   }
+
+
+
+  /* Footet */
+  /* Copyright */
+  #footer-copyright p{
+    font-size: 20px;
+    font-weight: 500;
+  }
 }
 
-/* 370 */
-@media (max-width: 370px) {
-  /* Drawer */
+/* 450 */
+@media (max-width: 450px) {
+  /* Header */
+  /* toolbar 2 */
+  /* logo */
+  /* Logo */
+  #toolbar2-logo img{
+    width: 180px;
+  }
+
+
+
+  /* Footer */
+  /* Logo */
+  #footer-logo img{
+    width: 200px;
+  }
 }
 </style>

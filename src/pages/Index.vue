@@ -49,80 +49,42 @@
     </q-carousel>
 
     <!-- Organizations -->
-    <section class="q-pa-xl">
+    <section id="organizations" class="q-my-xl">
       <!-- Section title -->
-      <h1 class="text-h4 text-center text-light-blue-6 q-mt-none">
+      <h1 class="text-h4 text-center text-light-blue-6 text-uppercase q-px-sm">
         Instituições mais procuradas essa semana
       </h1>
 
       <!-- Text and image -->
       <div class="cards row justify-around" id="organizations-cards">
         <!-- Organization -->
-        <div class="organizations-card text-center q-pa-md col-sm-4 col-md-3">
-          <p class="text-h6"> 
-            Recebeu mais de 8000 doações essa semana
-          </p>
-          <img src="../assets/organizations/instituto-apae.png" alt="" class="card-img">
-        </div>
-
-        <!-- Organization -->
-        <div class="organizations-card text-center q-pa-md col-sm-4 col-md-3">
-          <p class="text-h6"> 
-            Recebeu mais de 8000 doações essa semana
-          </p>
-          <img src="../assets/organizations/instituto-cancerInfantil.png" alt="" class="card-img">
-        </div>
-
-        <!-- Organization -->
-        <div class="organizations-card text-center q-pa-md col-sm-4 col-md-3">
-          <p class="text-h6"> 
-            Recebeu mais de 8000 doações essa semana
-          </p>
-          <img src="../assets/organizations/instituto-luisaMel.png" alt="" class="card-img">
+        <div class="organizations-card text-center q-pa-sm col-sm-4 col-md-3" v-for="organization in organizations" :key="organization">
+          <h3 class="text-h6"> 
+            {{organization.title}}
+          </h3>
+          <img :src="organization.src" alt="" class="card-img">
         </div>
       </div>
     </section>
 
     <!-- Campaigns -->
-    <section class="q-pa-xl">
+    <section id="campaigns" class="q-mb-xl">
       <!-- Section title -->
-      <h1 class="text-h4 text-center text-light-blue-6">
+      <h1 class="text-h4 text-center text-light-blue-6 text-uppercase q-mb-xl q-px-sm">
         Campanhas mais populares da semana
       </h1>
 
       <!-- Texts and image -->
       <div class="cards row justify-around" id="campaigns-cards">
         <!-- Campaign -->
-        <div class="campaigns-card text-center col-sm-4 col-md-3">
+        <div class="campaigns-card text-center col-sm-4 col-md-3 q-pa-sm" v-for="campaign in campaigns" :key="campaign">
           <h3 class="text-red text-h5">
-            Compra de respiradores para Taquaritinga
+            {{campaign.title}}
           </h3>
           <p class="text-subtitle1"> 
-            Arrecadou mais de R$ 20.000,00
+            {{campaign.subtitle}}
           </p>
-          <q-icon size="120px" name="img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
-        </div>
-
-        <!-- Campaign -->
-        <div class="campaigns-card text-center col-sm-4 col-md-3">
-          <h3 class="text-red text-h5">
-            Compra de agasalho para moradores de rua
-          </h3>
-          <p class="text-subtitle1"> 
-            Arrecadou mais de R$ 10.000,00
-          </p>
-          <q-icon size="120px" name="img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
-        </div>
-
-        <!-- Campaign -->
-        <div class="campaigns-card text-center col-sm-4 col-md-3">
-          <h3 class="text-red text-h5">
-            Compra de alimentos para Orfanato XYZ
-          </h3>
-          <p class="text-subtitle1"> 
-            Arrecadou mais de R$ 12.000,00
-          </p>
-          <q-icon size="120px" name="img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
+          <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg" class="card-img">
         </div>
       </div>
     </section>
@@ -131,7 +93,7 @@
     <section id="divulgation" class="flex justify-center items-center q-py-xs">
       <!-- Content -->
       <div id="divulgation-content" class="text-center">
-        <q-btn color="white q-px-xl q-py-md" rounded class="text-black" label="clique aqui" size="22px" />
+        <q-btn id="divulgation-content-btn" color="white q-px-xl q-py-md" rounded class="text-black" label="clique aqui" size="22px" />
       </div>
     </section>
   </q-page>
@@ -143,7 +105,35 @@ export default {
   data () {
     return {
       slide: "first",
-      autoplay: true
+      autoplay: true,
+      organizations: [
+        {
+          title: 'Compra de respiradores para Taquaritinga',
+          src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
+        },
+        {
+          title: 'Compra de agasalho para moradores de rua',
+          src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
+        },
+        {
+          title: 'Compra de alimentos para orfanato XYZ',
+          src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
+        },
+      ],
+      campaigns: [
+        {
+          title: 'Compra de respiradores para Taquaritinga',
+          subtitle: 'Arrecadou mais de R$ 20.000,00'
+        },
+        {
+          title: 'Compra de agasalho para moradores de rua',
+          subtitle: 'Arrecadou mais de R$ 10.000,00'
+        },
+        {
+          title: 'Compra de alimentos para orfanato XYZ',
+          subtitle: 'Arrecadou mais de R$ 12.000,00'
+        },
+      ],
     }
   }
 }
@@ -167,7 +157,7 @@ export default {
 /* Organizations and divulgations */
 /* Cards */
 .card-img{
-  width: 100%;
+  width: 60%;
 }
 
 
@@ -181,7 +171,7 @@ export default {
   background-color: #00A5F7;
   background-image: url("../assets/divulgation/banner.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 #divulgation-content button{
   transform: translateY(40px);
@@ -221,8 +211,31 @@ export default {
   /* img */
   #organizations-cards .organizations-card img,
   #campaigns-cards .campaigns-card img{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+  }
+
+  /* Organizations and campaigns */
+  /* h1 */
+  #organizations h1,
+  #campaigns h1{
+    font-size: 26px;
+  }
+  /* h3 */
+  #organizations h3,
+  #campaigns h3{
+    font-size: 20px;
+  }
+
+
+
+  /* Divulgation */
+  #divulgation{
+    height: 400px;
+  }
+  /* button */
+  #divulgation-content-btn{
+    padding: 20px;
   }
 }       
 
@@ -234,6 +247,26 @@ export default {
   .carousel-slide-content p{
     height: 80px;
     overflow: scroll;
+  }
+
+
+
+  /* img */
+  #organizations-cards .organizations-card img,
+  #campaigns-cards .campaigns-card img{
+    width: 150px;
+    height: 150px;
+  }
+
+
+
+  /* Divulgation */
+  #divulgation{
+    height: 300px;
+  }
+  /* button */
+  #divulgation-content-btn{
+    padding: 5px;
   }
 }
 </style>

@@ -47,7 +47,7 @@
                     <p class="text-h6"> 
                         Recebeu mais de 8000 doações essa semana
                     </p>
-                    <img src="../assets/organizations/instituto-cancerInfantil.png" alt="" class="card-img">
+                    <img src="../assets/index/organizations/instituto-cancerInfantil.png" alt="" class="card-img">
                     </div>
 
                     <!-- Organization -->
@@ -55,7 +55,7 @@
                     <p class="text-h6"> 
                         Recebeu mais de 8000 doações essa semana
                     </p>
-                    <img src="../assets/organizations/instituto-luisaMel.png" alt="" class="card-img">
+                    <img src="../assets/index/organizations/instituto-luisaMel.png" alt="" class="card-img">
                     </div>
 
                     <!-- Organization -->
@@ -63,7 +63,7 @@
                         <p class="text-h6"> 
                             Recebeu mais de 8000 doações essa semana
                         </p>
-                        <img src="../assets/organizations/instituto-apae.png" alt="" class="card-img">
+                        <img src="../assets/index/organizations/instituto-apae.png" alt="" class="card-img">
                     </div>
 
                     <!-- Organization -->
@@ -71,7 +71,7 @@
                     <p class="text-h6"> 
                         Recebeu mais de 8000 doações essa semana
                     </p>
-                    <img src="../assets/organizations/instituto-apae.png" alt="" class="card-img">
+                    <img src="../assets/index/organizations/instituto-apae.png" alt="" class="card-img">
                     </div>
                 </div>
 
@@ -81,7 +81,7 @@
                     <p class="text-h6"> 
                         Recebeu mais de 8000 doações essa semana
                     </p>
-                        <img src="../assets/organizations/instituto-cancerInfantil.png" alt="" class="card-img">
+                        <img src="../assets/index/organizations/instituto-cancerInfantil.png" alt="" class="card-img">
                     </div>
 
                     <!-- Organization -->
@@ -89,7 +89,7 @@
                     <p class="text-h6"> 
                         Recebeu mais de 8000 doações essa semana
                     </p>
-                    <img src="../assets/organizations/instituto-luisaMel.png" alt="" class="card-img">
+                    <img src="../assets/index/organizations/instituto-luisaMel.png" alt="" class="card-img">
                     </div>
 
                     <!-- Organization -->
@@ -97,7 +97,7 @@
                     <p class="text-h6"> 
                         Recebeu mais de 8000 doações essa semana
                     </p>
-                    <img src="../assets/organizations/instituto-apae.png" alt="" class="card-img">
+                    <img src="../assets/index/organizations/instituto-apae.png" alt="" class="card-img">
                     </div>
 
                     <!-- Organization -->
@@ -105,7 +105,7 @@
                     <p class="text-h6"> 
                         Recebeu mais de 8000 doações essa semana
                     </p>
-                    <img src="../assets/organizations/instituto-apae.png" alt="" class="card-img">
+                    <img src="../assets/index/organizations/instituto-apae.png" alt="" class="card-img">
                     </div>
                 </div>
             </div>
