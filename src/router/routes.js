@@ -32,7 +32,7 @@ const routes = [
     path: '/en-us',
     component: () => import('layouts/EnglishLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexEnUs.vue') }
+      { path: '', component: () => import('pages/HomeEnUS.vue') }
     ]
   },
   // Always leave this as last one,
