@@ -4,9 +4,9 @@
     <q-header elevated>
       <!-- Social networking -->
       <q-toolbar id="toolbar1" class="justify-center bg-light-blue-6 gt-xs">
-        <q-btn to="/sobre" icon-right="facebook" label="Nos siga no facebook" flat rounded />
-        <q-btn to="/sobre" icon-right="fab fa-instagram" label="E no instagram" flat rounded />
-        <q-btn to="/sobre" icon-right="mail" label="Ou nos envie um e-mail" flat rounded />
+        <q-btn to="/sobre" icon-right="facebook" label="Follow us on" flat rounded />
+        <q-btn to="/sobre" icon-right="fab fa-instagram" label="And also follow our instagram" flat rounded />
+        <q-btn to="/sobre" icon-right="mail" label="Or send us an e-mail" flat rounded />
       </q-toolbar>
 
       <!-- Logo and menu -->
@@ -26,11 +26,11 @@
         </q-toolbar-title>
 
         <div class="mobile-hide">
-          <q-btn to="/" label="Início" flat rounded class="text-h5"></q-btn>
-          <q-btn to="/organizações" label="Organizações" flat rounded class="text-h5"></q-btn>
-          <q-btn to="/campanhas" label="Campanhas" flat rounded class="text-h5"></q-btn>
-          <q-btn to="/contato" label="Contato" flat rounded class="text-h5"></q-btn>
-          <q-btn to="/sobre" label="Sobre" flat rounded class="text-h5"></q-btn>
+          <q-btn to="/" label="Home" flat rounded class="text-h5"></q-btn>
+          <q-btn to="/organizações" label="Organizations" flat rounded class="text-h5"></q-btn>
+          <q-btn to="/campanhas" label="Campaigns" flat rounded class="text-h5"></q-btn>
+          <q-btn to="/contato" label="Contact Us" flat rounded class="text-h5"></q-btn>
+          <q-btn to="/sobre" label="About Us" flat rounded class="text-h5"></q-btn>
         </div>
       </q-toolbar>
     </q-header>
@@ -55,9 +55,9 @@
 
       <!-- Social networking -->
       <q-toolbar id="drawer-socialNetwork" class="column bg-light-blue-6 q-pa-md">
-        <q-btn to="/sobre" icon-right="facebook" label="Nos siga no facebook" flat rounded class="text-white" />
-        <q-btn to="/sobre" icon-right="instagram" label="E no instagram" flat rounded class="text-white" />
-        <q-btn to="/sobre" icon-right="mail" label="Ou nos envie um e-mail" flat rounded class="text-white" />
+        <q-btn to="/sobre" icon-right="facebook" label="Follow us on facebook" flat rounded class="text-white" />
+        <q-btn to="/sobre" icon-right="instagram" label="And also follow our instagram" flat rounded class="text-white" />
+        <q-btn to="/sobre" icon-right="mail" label="Or send us an e-mail" flat rounded class="text-white" />
       </q-toolbar>
     </q-drawer>
 
@@ -82,24 +82,24 @@
         <!-- Links || menu -->
         <nav id="footer-content-menu" class="flex column">
           <q-btn to="/" label="Início" flat rounded class="text-h6"></q-btn>
-          <q-btn to="/sobre" label="Organizações" flat rounded class="text-h6"></q-btn>
-          <q-btn to="/sobre" label="Campanhas" flat rounded class="text-h6"></q-btn>
-          <q-btn to="/sobre" label="Contato" flat rounded class="text-h6"></q-btn>
-          <q-btn to="/sobre" label="Sobre" flat rounded class="text-h6"></q-btn>
+          <q-btn to="/sobre" label="Organizations" flat rounded class="text-h6"></q-btn>
+          <q-btn to="/sobre" label="Campaigns" flat rounded class="text-h6"></q-btn>
+          <q-btn to="/sobre" label="Contact Us" flat rounded class="text-h6"></q-btn>
+          <q-btn to="/sobre" label="About Us" flat rounded class="text-h6"></q-btn>
         </nav>  
         
         <!-- Social networks -->
         <div id="footer-content-socialNetworks" class="row justify-center">
           <div class="column items-center">
-            <q-btn to="/sobre" label="Nos siga no facebook" flat rounded class="text-h6" />
+            <q-btn to="/sobre" label="Follow us on facebook" flat rounded class="text-h6" />
             <q-icon name="facebook" class="text-h4" />
           </div>
           <div class="column items-center">
-            <q-btn to="/sobre" label="E no instagram" flat rounded class="text-h6"/>
+            <q-btn to="/sobre" label="And also follow our instagram" flat rounded class="text-h6"/>
             <q-icon name="fab fa-instagram" class="text-h4" />
           </div>
           <div class="column items-center">
-            <q-btn to="/sobre" label="Ou nos envie um e-mail" flat rounded class="text-h6" />
+            <q-btn to="/sobre" label="Or send us an e-mail" flat rounded class="text-h6" />
             <q-icon name="email" class="text-h4" />
           </div>
         </div>
@@ -108,7 +108,7 @@
       <!-- Copyright -->
       <div id="footer-copyright" class="q-py-lg q-px-md">
         <p class="text-black text-center text-h4 q-ma-none">
-          Centro de doações - 2021 - Todos os direitos reservados ©
+          Centro de doações - 2021 - All rights reserved ©
         </p>
       </div>
     </q-footer>
