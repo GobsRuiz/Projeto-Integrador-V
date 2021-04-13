@@ -46,28 +46,37 @@ OS VALORES DO CENTRO DE DOAÇÕES
            <div class="column col-4 items-center">
              <h3 class="text-h5 text-weight-bolder">ATENCIOSIDADE</h3>
            <q-icon name="far fa-eye text-light-blue-6" class="text-h1 q-pb-xl" />
-          <p class="text-h6 text-weight-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, tempora expedita vero sint nemo corporis rerum alias. Doloribus voluptatem, debitis adipisci commodi, ipsam, labore reprehenderit distinctio reiciendis deserunt beatae facere?
-          Eum ut, nesciunt rem magni atque est, voluptatum, sequi possimus deserunt doloribus quis? Esse a vero rerum, atque unde impedit enim veritatis distinctio optio, ab modi tempore quas at quam!
-          Eum aspernatur exercitationem, commodi hic quibusdam autem similique culpa dolorem harum deleniti expedita, quia ratione illo fuga ut adipisci quas doloribus quidem praesentium! Ducimus in similique expedita? Beatae, dicta voluptatibus.
-          Illo porro ea harum omnis aspernatur quidem, cum delectus exercitationem quis libero beatae quia hic ipsa ab laborum minima suscipit corrupti. Vel laboriosam officiis velit exercitationem corporis sunt quos. Modi?</p>
+          <p class="text-h6 text-weight-bold">
+            O Centro trata todas as instituições
+de forma atenciosa e analisa
+cada uma das campanhas 
+e organizações que pediram para serem divulgadas pessoalmente
+para aprovar somente as instituições que levam o 
+ato de ajudar a sério
+          </p>
           </div>
 
   <div class="column col-4 items-center">
                  <h3 class="text-h5 text-weight-bolder">SIMPLICIDADE</h3>
            <q-icon name="far fa-handshake text-light-blue-6" class="text-h1 q-pb-xl" />
-          <p class="text-h6 text-weight-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, tempora expedita vero sint nemo corporis rerum alias. Doloribus voluptatem, debitis adipisci commodi, ipsam, labore reprehenderit distinctio reiciendis deserunt beatae facere?
-          Eum ut, nesciunt rem magni atque est, voluptatum, sequi possimus deserunt doloribus quis? Esse a vero rerum, atque unde impedit enim veritatis distinctio optio, ab modi tempore quas at quam!
-          Eum aspernatur exercitationem, commodi hic quibusdam autem similique culpa dolorem harum deleniti expedita, quia ratione illo fuga ut adipisci quas doloribus quidem praesentium! Ducimus in similique expedita? Beatae, dicta voluptatibus.
-          Illo porro ea harum omnis aspernatur quidem, cum delectus exercitationem quis libero beatae quia hic ipsa ab laborum minima suscipit corrupti. Vel laboriosam officiis velit exercitationem corporis sunt quos. Modi?</p>
+          <p class="text-h6 text-weight-bold">
+            O Centro acredita que é de extrema
+importância manter os conteúdos o mais
+acessíveis e simples quanto possível para garantir
+a acessibilidade a todos os tipos de usuários
+          </p>
           </div>
 
             <div class="column col-4 items-center">
                            <h3 class="text-h5 text-weight-bolder">PROFISSIONALISMO</h3>
            <q-icon name="fas fa-id-card text-light-blue-6" class="text-h1 q-pb-xl" />
-          <p class="text-h6 text-weight-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, tempora expedita vero sint nemo corporis rerum alias. Doloribus voluptatem, debitis adipisci commodi, ipsam, labore reprehenderit distinctio reiciendis deserunt beatae facere?
-          Eum ut, nesciunt rem magni atque est, voluptatum, sequi possimus deserunt doloribus quis? Esse a vero rerum, atque unde impedit enim veritatis distinctio optio, ab modi tempore quas at quam!
-          Eum aspernatur exercitationem, commodi hic quibusdam autem similique culpa dolorem harum deleniti expedita, quia ratione illo fuga ut adipisci quas doloribus quidem praesentium! Ducimus in similique expedita? Beatae, dicta voluptatibus.
-          Illo porro ea harum omnis aspernatur quidem, cum delectus exercitationem quis libero beatae quia hic ipsa ab laborum minima suscipit corrupti. Vel laboriosam officiis velit exercitationem corporis sunt quos. Modi?</p>
+          <p class="text-h6 text-weight-bold">
+ O Centro tem uma alta demanda
+ por qualidade e transparência, por
+ isso leva tem comprometimento 
+com os usuários e com as organizações e resolve as questões
+da forma mais direta e efetiva possível
+          </p>
           </div>
 
           </div>
