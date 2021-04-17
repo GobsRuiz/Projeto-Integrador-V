@@ -1,9 +1,9 @@
 <template>
   <q-page>
-    <div class="q-pa-md column">
-        <q-btn id="divulgation-content-btn" to="/en-us" color="white q-px-xl q-py-md" rounded class="text-black" label="Versão em inglês" size="22px" />
+         <div class="q-pa-md column">
+        <q-btn id="divulgation-content-btn" to="/" color="white q-px-xl q-py-md" rounded class="text-black" label="Portuguese version" size="22px" />
     </div>
-        <!-- Carousel -->
+    <!-- Carousel -->
     <q-carousel
       animated
       v-model="slide"
@@ -17,12 +17,12 @@
     >
       <q-carousel-slide class="carousel-slide flex justify-center items-center" name="first" img-src="../assets/carousel/banner1.png">
         <div class="carousel-slide-content text-center q-px-xl">
-          <div class="text-h2 text-white">Tchau, calor!</div>
+          <div class="text-h2 text-white">Goodbye, heat!</div>
           <p class="text-subtitle1 text-white">
-            Ajude o Lar São Vicente de Paulo a arrecadar verba para comprar climatizadores para melhor
-            qualidade de vida para nossos veteranos.
+            Help São Vicente de Paulo nursing home facility raise funds to buy air conditioners for better
+            quality of life for our veterans.
           </p>
-          <q-btn color="white" style="border-radius: 15px;" class="text-red q-py-md" label="clique para participar"></q-btn>
+          <q-btn color="white" style="border-radius: 15px;" class="text-red q-py-md" label="Click here to help them"></q-btn>
         </div>
       </q-carousel-slide>
       <q-carousel-slide class="flex justify-center items-center" name="second" img-src="https://cdn.quasar.dev/img/parallax1.jpg">
@@ -55,7 +55,7 @@
     <section id="organizations" class="q-my-xl">
       <!-- Section title -->
       <h1 class="text-h4 text-center text-light-blue-6 text-uppercase q-px-sm">
-        Instituições mais procuradas essa semana
+MOST SEARCHED INSTITUTIONS THIS WEEK
       </h1>
 
       <!-- Text and image -->
@@ -74,7 +74,7 @@
     <section id="campaigns" class="q-mb-xl">
       <!-- Section title -->
       <h1 class="text-h4 text-center text-light-blue-6 text-uppercase q-mb-xl q-px-sm">
-        Campanhas mais populares da semana
+MOST SEARCHED CAMPAINGS THIS WEEK
       </h1>
 
       <!-- Texts and image -->
@@ -96,7 +96,7 @@
     <section id="divulgation" class="flex justify-center items-center q-py-xs">
       <!-- Content -->
       <div id="divulgation-content" class="text-center">
-        <q-btn id="divulgation-content-btn" color="white q-px-xl q-py-md" rounded class="text-black" label="clique aqui" size="22px" />
+        <q-btn id="divulgation-content-btn" color="white q-px-xl q-py-md" rounded class="text-black" label="Click here" size="22px" />
       </div>
     </section>
   </q-page>
@@ -104,37 +104,37 @@
 
 <script>
 export default {
-  name: 'PageIndex',
+  name: 'PageIndexEnUs',
   data () {
     return {
       slide: "first",
       autoplay: true,
       organizations: [
         {
-          title: 'Compra de respiradores para Taquaritinga',
+          title: 'Fund raising to buy respirators for Taquaritinga',
           src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
         },
         {
-          title: 'Compra de agasalho para moradores de rua',
+          title: 'Fund raising to buy warm clothes for homeless people',
           src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
         },
         {
-          title: 'Compra de alimentos para orfanato XYZ',
+          title: 'Fund raising to buy food for the orphans at XYZ orphanage',
           src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
         },
       ],
       campaigns: [
         {
-          title: 'Compra de respiradores para Taquaritinga',
-          subtitle: 'Arrecadou mais de R$ 20.000,00'
+          title: 'Fund raising to buy respirators for Taquaritinga',
+          subtitle: 'Currently raised more than R$ 20.000,00'
         },
         {
-          title: 'Compra de agasalho para moradores de rua',
-          subtitle: 'Arrecadou mais de R$ 10.000,00'
+          title: 'Fund raising to buy warm clothes for homeless people',
+          subtitle: 'Currently raised more than R$ 10.000,00'
         },
         {
-          title: 'Compra de alimentos para orfanato XYZ',
-          subtitle: 'Arrecadou mais de R$ 12.000,00'
+          title: 'Fund raising to buy food for the orphans at XYZ orphanage',
+          subtitle: 'Currently raised more than R$ 12.000,00'
         },
       ],
     }
@@ -172,7 +172,7 @@ export default {
   height: 100vh;
 
   background-color: #00A5F7;
-  background-image: url("../assets/divulgation/banner.png");
+  background-image: url("../assets/divulgation/banner2en.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
