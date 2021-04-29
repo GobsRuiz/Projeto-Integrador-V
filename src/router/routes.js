@@ -49,6 +49,13 @@ const routes = [
       { path: '', component: () => import('pages/PerfilOrg.vue') }
     ]
   },
+  {
+    path: '/campanha',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Campanha.vue') }
+    ]
+  },
   // Always leave this as last one,
   // but you can also remove it
   {

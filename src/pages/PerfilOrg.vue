@@ -35,8 +35,8 @@
 
 
                  <div>
-                 <q-card class="my-card col q-mx-xl">
-      <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" />
+                 <q-card class="my-card col q-mx-xl" style="max-width: 500px;">
+      <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" style="width: 350px; height: 350px;" />
       <q-card-section>
         <div class="row no-wrap items-center">
           <div class="col text-h6 ellipsis">
@@ -75,7 +75,7 @@
 
      <div>
                  <q-card class="my-card col q-mx-xl">
-      <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" />
+      <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" style="width: 350px; height: 350px;" />
       <q-card-section>
         <div class="row no-wrap items-center">
           <div class="col text-h6 ellipsis">
