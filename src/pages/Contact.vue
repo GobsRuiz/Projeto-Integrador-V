@@ -56,9 +56,9 @@ OU NOS ENVIE UMA MENSAGEM!
         :rules="[ val => val && val.length > 0 || 'Por favor digite sua mensagem.']"
     />
 
-      <div>
+      <div class="row justify-around q-py-md">
         <q-btn label="Enviar mensagem" type="submit" color="primary"/>
-        <q-btn label="Apagar" type="reset" color="primary" flat class="q-ml-sm" />
+        <q-btn label="Apagar" type="reset" color="red" class="q-ml-sm" />
       </div>
     </q-form>
 </div>

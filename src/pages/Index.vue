@@ -62,10 +62,12 @@
       <div class="cards row justify-around" id="organizations-cards">
         <!-- Organization -->
         <div class="organizations-card text-center q-pa-sm col-sm-4 col-md-3" v-for="organization in organizations" :key="organization">
+          <a href="/#/perfilorg" style="text-decoration: none;">
           <h3 class="text-h6"> 
             {{organization.title}}
           </h3>
           <img :src="organization.src" alt="" class="card-img">
+          </a>
         </div>
       </div>
     </section>
