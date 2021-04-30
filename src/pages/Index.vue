@@ -61,12 +61,14 @@
       <!-- Text and image -->
       <div class="cards row justify-around" id="organizations-cards">
         <!-- Organization -->
-        <div class="organizations-card text-center q-pa-sm col-sm-4 col-md-3" v-for="organization in organizations" :key="organization">
+        <div class="organizations-card text-center q-pa-sm col-sm-5 col-md-3" v-for="organization in organizations" :key="organization">
           <a href="/#/perfilorg" style="text-decoration: none;">
           <h3 class="text-h6"> 
             {{organization.title}}
           </h3>
-          <img :src="organization.src" alt="" class="card-img">
+          <q-avatar size="200px">
+          <img :src="`/images/organizations/${organization.src}`" alt="" class="card-img">
+          </q-avatar>
           </a>
         </div>
       </div>
@@ -82,14 +84,18 @@
       <!-- Texts and image -->
       <div class="cards row justify-around" id="campaigns-cards">
         <!-- Campaign -->
-        <div class="campaigns-card text-center col-sm-4 col-md-3 q-pa-sm" v-for="campaign in campaigns" :key="campaign">
+        <div class="campaigns-card text-center col-sm-5 q-py-lg col-md-3 q-pa-sm" v-for="campaign in campaigns" :key="campaign">
+          <a href="/#/campanha" style="text-decoration: none;">
           <h3 class="text-red text-h5">
             {{campaign.title}}
           </h3>
           <p class="text-subtitle1"> 
             {{campaign.subtitle}}
           </p>
-          <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg" class="card-img">
+          <q-avatar size="200px" rounded>
+          <img :src="`/images/campaings/${campaign.src}`" class="card-img">
+          </q-avatar>
+          </a>
         </div>
       </div>
     </section>
@@ -113,30 +119,33 @@ export default {
       autoplay: true,
       organizations: [
         {
-          title: 'Compra de respiradores para Taquaritinga',
-          src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
+          title: 'APAE BRASIL',
+          src: 'instituto-apae.png'
         },
         {
-          title: 'Compra de agasalho para moradores de rua',
-          src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
+          title: 'Instituto do Câncer Infantil',
+          src: 'instituto-cancerInfantil.png'
         },
         {
-          title: 'Compra de alimentos para orfanato XYZ',
-          src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
+          title: 'Instituto Luisa Mell',
+          src: 'instituto-luisaMel.png'
         },
       ],
       campaigns: [
         {
           title: 'Compra de respiradores para Taquaritinga',
-          subtitle: 'Arrecadou mais de R$ 20.000,00'
+          subtitle: 'Arrecadou mais de R$ 20.000,00',
+          src: 'respiradores.jpg'
         },
         {
           title: 'Compra de agasalho para moradores de rua',
-          subtitle: 'Arrecadou mais de R$ 10.000,00'
+          subtitle: 'Arrecadou mais de R$ 10.000,00',
+          src: 'agasalhos.jpg'
         },
         {
           title: 'Compra de alimentos para orfanato XYZ',
-          subtitle: 'Arrecadou mais de R$ 12.000,00'
+          subtitle: 'Arrecadou mais de R$ 12.000,00',
+          src: 'alimentos.png'
         },
       ],
     }
@@ -163,6 +172,7 @@ export default {
 /* Cards */
 .card-img{
   width: 60%;
+  height: 180px;
 }
 
 
@@ -188,7 +198,7 @@ export default {
 
 /* Responsive */
 /* 600 */
-@media (max-width: 600px){
+@media (max-width: 630px){
   /* Carousel */
   /* Content */
   .carousel-slide-content{

@@ -56,7 +56,7 @@
       <!-- Social networking -->
       <q-toolbar id="drawer-socialNetwork" class="column bg-light-blue-6 q-pa-md">
         <q-btn to="/sobre" icon-right="facebook" label="Nos siga no facebook" flat rounded class="text-white" />
-        <q-btn to="/sobre" icon-right="instagram" label="E no instagram" flat rounded class="text-white" />
+        <q-btn to="/sobre" icon-right="fab fa-instagram" label="E no instagram" flat rounded class="text-white" />
         <q-btn to="/sobre" icon-right="mail" label="Ou nos envie um e-mail" flat rounded class="text-white" />
       </q-toolbar>
     </q-drawer>
@@ -126,22 +126,22 @@ const linksData = [
   },
   {
     title: 'Organizações',
-    icon: 'code',
+    icon: 'fas fa-people-carry',
     link: '/#/organizações'
   },
   {
     title: 'Campanhas',
-    icon: 'chat',
+    icon: 'fas fa-hand-holding-medical',
     link: '/#/campanhas'
   },
   {
     title: 'Contato',
-    icon: 'code',
+    icon: 'chat',
     link: '/#/contato'
   },
   {
     title: 'Sobre',
-    icon: 'code',
+    icon: 'fas fa-book',
     link: '/#/sobre'
   },
 ];

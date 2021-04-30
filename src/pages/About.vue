@@ -41,9 +41,9 @@ OS VALORES DO CENTRO DE DOAÇÕES
         <div class="row justify-center q-py-xl">
     <img src="../assets/about/meetingabout.svg" alt="">
 </div>
-         <div class="row text-center">
+         <div class="row text-center justify-around">
 
-           <div class="column col-4 items-center">
+           <div class="col-12 col-sm-5 col-md-3 items-center">
              <h3 class="text-h5 text-weight-bolder">ATENCIOSIDADE</h3>
            <q-icon name="far fa-eye text-light-blue-6" class="text-h1 q-pb-xl" />
           <p class="text-h6 text-weight-bold">
@@ -56,7 +56,7 @@ ato de ajudar a sério
           </p>
           </div>
 
-  <div class="column col-4 items-center">
+  <div class="col-12 col-sm-5 col-md-3 items-center">
                  <h3 class="text-h5 text-weight-bolder">SIMPLICIDADE</h3>
            <q-icon name="far fa-handshake text-light-blue-6" class="text-h1 q-pb-xl" />
           <p class="text-h6 text-weight-bold">
@@ -67,7 +67,7 @@ a acessibilidade a todos os tipos de usuários
           </p>
           </div>
 
-            <div class="column col-4 items-center">
+            <div class="col-12 col-sm-5 col-md-3 items-center">
                            <h3 class="text-h5 text-weight-bolder">PROFISSIONALISMO</h3>
            <q-icon name="fas fa-id-card text-light-blue-6" class="text-h1 q-pb-xl" />
           <p class="text-h6 text-weight-bold">

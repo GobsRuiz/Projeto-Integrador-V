@@ -1,12 +1,12 @@
 <template>
   <q-page class=" q-pb-xl flex justify-center align-center">
      
-<section title="cabeçalho 2" class="q-py-xl bg-light-blue-6 text-center text-white" id="sectionheader">
+<section title="cabeçalho 2" class="q-py-msm bg-light-blue-6 text-center text-white" id="sectionheader">
 
-<img style="max-width: 400px" src="../assets/logo.svg" alt="">
-<h2>Nome da instituição</h2>
-<h5>Data de ingresso</h5>
-<h5>Número de projetos criados</h5>
+<img style="max-width: 400px" src="../assets/index/organizations/instituto-apae.png" alt="">
+<h2>APAE BRASIL</h2>
+<h5>Data de ingresso: 19/04/2021</h5>
+<h5>Número de projetos criados: 2</h5>
 </section>
 
 
@@ -36,11 +36,11 @@
 
                  <div>
                  <q-card class="my-card col q-mx-xl" style="max-width: 500px;">
-      <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" style="width: 350px; height: 350px;" />
+      <q-img src="../assets/index/campaings/respiradores.jpg" style="width: 350px; height: 350px;" />
       <q-card-section>
         <div class="row no-wrap items-center">
           <div class="col text-h6 ellipsis">
-            Nome do projeto:
+            Compra de respiradores
           </div>
         </div>
       </q-card-section>
@@ -75,11 +75,11 @@
 
      <div>
                  <q-card class="my-card col q-mx-xl">
-      <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" style="width: 350px; height: 350px;" />
+      <q-img src="../assets/index/campaings/respiradores.jpg" style="width: 350px; height: 350px;" />
       <q-card-section>
         <div class="row no-wrap items-center">
           <div class="col text-h6 ellipsis">
-            Nome do projeto:
+            Compra de respiradores
           </div>
         </div>
       </q-card-section>

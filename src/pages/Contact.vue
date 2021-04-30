@@ -11,8 +11,8 @@ ENTRE EM CONTATO COM A GENTE!
 
  <div class="q-py-md justify-between row">
 
-    <div class="col-5 q-py-xl">
-        <p class="text-right text-h5 text-weight-bolder">
+    <div class="col-md-6 col-sm-12 q-py-xl">
+        <p class="text-center q-mx-md text-h5 text-weight-bolder">
 Deseja ter sua instituição divulgada aqui?
 Entre em contato através de uma das
 redes sociais abaixo:
@@ -20,7 +20,7 @@ redes sociais abaixo:
     <img src="../assets/contact/imgcontato.svg" alt="">
 </div>
 
-<div class="col-5 justify-end q-mx-sm"> 
+<div class="col-md-5 col-12 q-mx-sm"> 
             <p class="text-center q-py-xl text-h5 text-weight-bolder">
 OU NOS ENVIE UMA MENSAGEM!
     </p>
