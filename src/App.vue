@@ -11,6 +11,15 @@ export default {
 </script>
 
 <style>
+html{
+  font-size: 14px;
+}
+@media(max-width: 700px){
+  html{
+    font-size: 10px;
+  }
+}
+
 /* Reset */
 h1, h2, h3{
   margin-top: 0;

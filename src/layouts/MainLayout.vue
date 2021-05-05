@@ -151,6 +151,7 @@ export default {
   components: { EssentialLink },
   data () {
     return {
+      burger: true,
       leftDrawerOpen: false,
       essentialLinks: linksData
     }

@@ -1,5 +1,5 @@
 <template>
-  <q-page class="q-py-xl flex justify-center align-center">
+  <q-page id="about" class="q-py-xl flex justify-center align-center">
         <section title="O QUE É O CENTRO DE DOAÇÕES?" class="q-pt-xl" id="sectioncreation">
         <div style="transform: scaleY(-1);">
     <h1 id="organizations-title" class="text-h3 textColor-blue text-center q-mb-xl q-px-md">
@@ -107,5 +107,11 @@ export default {
 
   #sectioncreation img, #sectionstory img{
   width: 350px;  
+  }
+
+
+  #about h1,
+  #about p{
+    padding: 0 20px;
   }
 </style>

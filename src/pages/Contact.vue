@@ -1,5 +1,5 @@
 <template>
-  <q-page class="flex" id="bgdefault">
+  <q-page class="flex" style="justify-content: center;" id="bgdefault">
 <div class="q-py-xl">
 
     <div title="textos" class="row justify-center">
@@ -20,7 +20,7 @@ redes sociais abaixo:
     <img src="../assets/contact/imgcontato.svg" alt="">
 </div>
 
-<div class="col-md-5 col-12 q-mx-sm"> 
+<div id="formulario" class="col-md-5 q-mx-sm"> 
             <p class="text-center q-py-xl text-h5 text-weight-bolder">
 OU NOS ENVIE UMA MENSAGEM!
     </p>
@@ -88,9 +88,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #bgdefault{
   background-image: url("../assets/header/background-menu.svg");
   background-repeat: no-repeat;
   background-size: cover;}
+
+  @media(max-width: 1025px){
+    #formulario{
+      width: 100%;
+    }
+  }
 </style>
