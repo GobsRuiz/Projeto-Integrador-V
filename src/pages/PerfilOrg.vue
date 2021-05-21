@@ -152,7 +152,7 @@ export default {
   name: 'PerfilOrg',
   data () {
     return {
-      tab: 'mails',
+      tab: 'criados',
         progress1: 0.5,
     }
   },
@@ -181,6 +181,6 @@ export default {
   }
 
   #sectioncreation img, #sectionstory img{
-  width: 350px;  
+  width: 350px;
   }
 </style>

@@ -18,7 +18,7 @@
               </q-img>
             </q-card>
 
-            <q-card flat bordered class="my-card col" style="max-width: 750px; height: 500px;">
+            <q-card flat bordered class="my-card col-sm-12 col-md-6" style="max-width: 750px; height: 500px;">
               <q-card-section>
                 <div class="text-h6">Our Changing Planet</div>
               </q-card-section>
@@ -39,7 +39,7 @@
           <!-- div 2 primeiros cards fim-->
           <!-- ultima div -->
           <div class="col">
-            <q-card flat bordered class="my-card col">
+            <q-card flat bordered class="my-card col-sm-12 col-md-6">
               <q-card-section>
                 <div class="text-h6 q-mx-xl">Our Changing Planet</div>
               </q-card-section>
