@@ -16,7 +16,7 @@ html{
 }
 @media(max-width: 700px){
   html{
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
