@@ -25,14 +25,13 @@ redes sociais abaixo:
 OU NOS ENVIE UMA MENSAGEM!
     </p>
     <q-form
-      @submit="onSubmit"
       @reset="onReset"
       class="q-gutter-md bg-light-blue-1 q-pa-xl"
     >
       <q-input
       class="q-pa-sm"
         filled
-        v-model="name"
+        v-model="nome"
         label="Digite seu nome, por favor. *"
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'Por favor digite seu nome.']"
@@ -40,7 +39,7 @@ OU NOS ENVIE UMA MENSAGEM!
 
       <q-input
         filled
-        v-model="city"
+        v-model="cidade"
         label="Digite sua cidade, por favor. *"
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'Por favor digite sua cidade.']"
@@ -49,7 +48,7 @@ OU NOS ENVIE UMA MENSAGEM!
 
       <q-input
       label="Digite sua mensagem, por favor."
-      v-model="message"
+      v-model="mensagem"
       filled
       type="textarea"
       lazy-rules
@@ -57,7 +56,7 @@ OU NOS ENVIE UMA MENSAGEM!
     />
 
       <div class="row justify-around q-py-md">
-        <q-btn label="Enviar mensagem" type="submit" color="primary"/>
+        <q-btn label="Enviar mensagem" type="submit" color="primary" @click="cadastrarMensagem()"/>
         <q-btn label="Apagar" type="reset" color="red" class="q-ml-sm" />
       </div>
     </q-form>
@@ -69,12 +68,14 @@ OU NOS ENVIE UMA MENSAGEM!
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
  data () {
     return {
-      name: null,
-      city: null,
-      message: null,  
+      nome: '',
+      cidade: '',
+      mensagem: '',  
     }
   },
 
@@ -83,7 +84,11 @@ export default {
       this.name = null
       this.city = null
       this.message = null
-    }
+    },
+    ...mapActions('mainstore',['adicionarMensagem']),
+  	async cadastrarMensagem () {
+  		await this.adicionarMensagem({ nome: this.nome, cidade: this.cidade, mensagem: this.mensagem })
+  	}
   }
 }
 </script>

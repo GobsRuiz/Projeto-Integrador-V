@@ -56,6 +56,55 @@ const routes = [
       { path: '', component: () => import('pages/Campanha.vue') }
     ]
   },
+  {
+    path: '/produto',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Produto.vue') }
+    ],
+    meta: { autenticar: true }    
+  },
+  {
+    path: '/produtocadastro',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/ProdutoCadastro.vue') }
+    ],
+    meta: { autenticar: true }
+  },  
+  {
+    path: '/produtoalteracao',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/ProdutoAlteracao.vue') }
+    ],
+    meta: { autenticar: true }
+  },   
+  {
+    path: '/login',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Login.vue') }
+    ]
+  },
+  ,
+  {
+    path: '/mensagem',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Mensagem.vue') }
+    ],
+    meta: { autenticar: true }    
+  },
+  {
+    path: '/mensagemalteracao',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/MensagemAlteracao.vue') }
+    ],
+    meta: { autenticar: true }
+  },
+
   // Always leave this as last one,
   // but you can also remove it
   {
