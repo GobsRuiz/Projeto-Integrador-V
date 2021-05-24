@@ -56,7 +56,7 @@ OU NOS ENVIE UMA MENSAGEM!
     />
 
       <div class="row justify-around q-py-md">
-        <q-btn label="Enviar mensagem" type="submit" color="primary" @click="cadastrarMensagem()"/>
+        <q-btn label="Enviar mensagem" color="primary" @click="cadastrarMensagem()"/>
         <q-btn label="Apagar" type="reset" color="red" class="q-ml-sm" />
       </div>
     </q-form>
@@ -81,13 +81,16 @@ export default {
 
   methods: {
     onReset () {
-      this.name = null
-      this.city = null
-      this.message = null
+      this.nome = null
+      this.cidade = null
+      this.mensagem = null
     },
     ...mapActions('mainstore',['adicionarMensagem']),
   	async cadastrarMensagem () {
   		await this.adicionarMensagem({ nome: this.nome, cidade: this.cidade, mensagem: this.mensagem })
+      this.nome = ' '
+      this.cidade = ' '
+      this.mensagem = ' '
   	}
   }
 }

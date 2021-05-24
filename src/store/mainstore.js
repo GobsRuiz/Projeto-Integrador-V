@@ -31,7 +31,7 @@ const mutations = {
     const index = state.produtos.findIndex((p) => p.id === produtoId)
     state.produtos.splice(index, 1)
   },
-  SET_MESAGENS (state, mensagens) {
+  SET_MENSAGENS (state, mensagens) {
     state.mensagens = mensagens
   },
   SELECIONAR_MENSAGEM (state, mensagemId) {
