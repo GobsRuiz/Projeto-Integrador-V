@@ -27,8 +27,7 @@
 
         <div class="mobile-hide">
           <q-btn to="/" label="Início" flat rounded class="text-h5"></q-btn>
-          <q-btn to="/organizações" label="Organizações" flat rounded class="text-h5"></q-btn>
-          <q-btn to="/campanhas" label="Campanhas" flat rounded class="text-h5"></q-btn>
+          <q-btn to="/doacoes" label="Doações" flat rounded class="text-h5"></q-btn>
           <q-btn to="/contato" label="Contato" flat rounded class="text-h5"></q-btn>
           <q-btn to="/sobre" label="Sobre" flat rounded class="text-h5"></q-btn>
         </div>
@@ -82,9 +81,8 @@
         <!-- Links || menu -->
         <nav id="footer-content-menu" class="flex column">
           <q-btn to="/" label="Início" flat rounded class="text-h6"></q-btn>
-          <q-btn to="/sobre" label="Organizações" flat rounded class="text-h6"></q-btn>
-          <q-btn to="/sobre" label="Campanhas" flat rounded class="text-h6"></q-btn>
-          <q-btn to="/sobre" label="Contato" flat rounded class="text-h6"></q-btn>
+          <q-btn to="/doacoes" label="Doações" flat rounded class="text-h6"></q-btn>
+          <q-btn to="/contato" label="Contato" flat rounded class="text-h6"></q-btn>
           <q-btn to="/sobre" label="Sobre" flat rounded class="text-h6"></q-btn>
         </nav>  
         
@@ -108,7 +106,7 @@
       <!-- Copyright -->
       <div id="footer-copyright" class="q-py-lg q-px-md">
         <p class="text-black text-center text-h4 q-ma-none">
-          Centro de doações - 2021 - Todos os direitos reservados ©
+          Lar São Vicente de Paulo - 2021 - Todos os direitos reservados ©
         </p>
       </div>
     </q-footer>
@@ -125,14 +123,9 @@ const linksData = [
     link: '/'
   },
   {
-    title: 'Organizações',
-    icon: 'fas fa-people-carry',
-    link: '/#/organizações'
-  },
-  {
-    title: 'Campanhas',
+    title: 'Doações',
     icon: 'fas fa-hand-holding-medical',
-    link: '/#/campanhas'
+    link: '/#/doacoes'
   },
   {
     title: 'Contato',

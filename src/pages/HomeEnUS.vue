@@ -51,29 +51,10 @@
       </q-carousel-slide>
     </q-carousel>
 
-    <!-- Organizations -->
-    <section id="organizations" class="q-my-xl">
-      <!-- Section title -->
-      <h1 class="text-h4 text-center text-light-blue-6 text-uppercase q-px-sm">
-MOST SEARCHED INSTITUTIONS THIS WEEK
-      </h1>
-
-      <!-- Text and image -->
-      <div class="cards row justify-around" id="organizations-cards">
-        <!-- Organization -->
-        <div class="organizations-card text-center q-pa-sm col-sm-4 col-md-3" v-for="organization in organizations" :key="organization">
-          <h3 class="text-h6"> 
-            {{organization.title}}
-          </h3>
-          <img :src="organization.src" alt="" class="card-img">
-        </div>
-      </div>
-    </section>
-
     <!-- Campaigns -->
     <section id="campaigns" class="q-mb-xl">
       <!-- Section title -->
-      <h1 class="text-h4 text-center text-light-blue-6 text-uppercase q-mb-xl q-px-sm">
+      <h1 class="text-h4 text-center text-light-blue-6 text-uppercase q-mb-xl q-py-xl">
 MOST SEARCHED CAMPAINGS THIS WEEK
       </h1>
 
@@ -87,7 +68,7 @@ MOST SEARCHED CAMPAINGS THIS WEEK
           <p class="text-subtitle1"> 
             {{campaign.subtitle}}
           </p>
-          <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg" class="card-img">
+          <img :src="`/images/campaings/${campaign.src}`" class="card-img">
         </div>
       </div>
     </section>
@@ -109,32 +90,18 @@ export default {
     return {
       slide: "first",
       autoplay: true,
-      organizations: [
-        {
-          title: 'Fund raising to buy respirators for Taquaritinga',
-          src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
-        },
-        {
-          title: 'Fund raising to buy warm clothes for homeless people',
-          src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
-        },
-        {
-          title: 'Fund raising to buy food for the orphans at XYZ orphanage',
-          src: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg'
-        },
-      ],
       campaigns: [
         {
           title: 'Fund raising to buy respirators for Taquaritinga',
-          subtitle: 'Currently raised more than R$ 20.000,00'
+          src: 'respiradores.png'
         },
         {
           title: 'Fund raising to buy warm clothes for homeless people',
-          subtitle: 'Currently raised more than R$ 10.000,00'
+          src: 'agasalhos.png'
         },
         {
           title: 'Fund raising to buy food for the orphans at XYZ orphanage',
-          subtitle: 'Currently raised more than R$ 12.000,00'
+          src: 'alimentos.png'
         },
       ],
     }

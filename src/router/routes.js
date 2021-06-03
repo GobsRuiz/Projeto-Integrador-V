@@ -8,20 +8,6 @@ const routes = [
     ]
   },
   {
-    path: '/organizações',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/Organizations.vue') }
-    ]
-  },
-  {
-    path: '/campanhas',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/Campaigns.vue') }
-    ]
-  },
-  {
     path: '/sobre',
     component: () => import('layouts/MainLayout.vue'),
     children: [
@@ -43,43 +29,12 @@ const routes = [
     ]
   },
   {
-    path: '/perfilorg',
+    path: '/doacoes',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/PerfilOrg.vue') }
+      { path: '', component: () => import('pages/Donations.vue') }
     ]
   },
-  {
-    path: '/campanha',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/Campanha.vue') }
-    ]
-  },
-  {
-    path: '/produto',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/Produto.vue') }
-    ],
-    meta: { autenticar: true }    
-  },
-  {
-    path: '/produtocadastro',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/ProdutoCadastro.vue') }
-    ],
-    meta: { autenticar: true }
-  },  
-  {
-    path: '/produtoalteracao',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/ProdutoAlteracao.vue') }
-    ],
-    meta: { autenticar: true }
-  },   
   {
     path: '/login',
     component: () => import('layouts/MainLayout.vue'),
@@ -87,10 +42,9 @@ const routes = [
       { path: '', component: () => import('pages/Login.vue') }
     ]
   },
-  ,
   {
     path: '/mensagem',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('layouts/DashLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Mensagem.vue') }
     ],
@@ -98,13 +52,60 @@ const routes = [
   },
   {
     path: '/mensagemalteracao',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('layouts/DashLayout.vue'),
     children: [
       { path: '', component: () => import('pages/MensagemAlteracao.vue') }
     ],
     meta: { autenticar: true }
   },
-
+  {
+    path: '/carrossel',
+    component: () => import('layouts/DashLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Carrossel.vue') }
+    ],
+    meta: { autenticar: true }    
+  },
+  {
+    path: '/carrosselcadastro',
+    component: () => import('layouts/DashLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/CarrosselCadastro.vue') }
+    ],
+    meta: { autenticar: true }
+  },  
+  {
+    path: '/carrosselalteracao',
+    component: () => import('layouts/DashLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/CarrosselAlteracao.vue') }
+    ],
+    meta: { autenticar: true }
+  },
+  {
+    path: '/item',
+    component: () => import('layouts/DashLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Item.vue') }
+    ],
+    meta: { autenticar: true }    
+  },
+  {
+    path: '/itemcadastro',
+    component: () => import('layouts/DashLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/ItemCadastro.vue') }
+    ],
+    meta: { autenticar: true }
+  },  
+  {
+    path: '/itemalteracao',
+    component: () => import('layouts/DashLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/ItemAlteracao.vue') }
+    ],
+    meta: { autenticar: true }
+  },     
   // Always leave this as last one,
   // but you can also remove it
   {

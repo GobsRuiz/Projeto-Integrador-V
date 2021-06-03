@@ -27,7 +27,6 @@
 
         <div class="mobile-hide">
           <q-btn to="/" label="Home" flat rounded class="text-h5"></q-btn>
-          <q-btn to="/organizações" label="Organizations" flat rounded class="text-h5"></q-btn>
           <q-btn to="/campanhas" label="Campaigns" flat rounded class="text-h5"></q-btn>
           <q-btn to="/contato" label="Contact Us" flat rounded class="text-h5"></q-btn>
           <q-btn to="/sobre" label="About Us" flat rounded class="text-h5"></q-btn>

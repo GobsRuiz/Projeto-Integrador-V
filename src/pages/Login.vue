@@ -45,7 +45,7 @@ export default {
       await this.login({ username: this.usuario, password: this.senha })
       await this.carregarToken()
       if (this.token) {
-        this.$router.push('/mensagem')
+        this.$router.push('/item')
       }
     },
     efetuarLogout () {

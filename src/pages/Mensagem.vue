@@ -74,7 +74,7 @@ export default {
     remover (mensagemId) {
       this.$q.dialog({
         title: 'Confirma',
-        message: 'Tem certeza que deseja excluir a mensagem?',
+        message: 'Tem certeza que deseja excluir essa mensagem?',
         cancel: {
           label: 'Cancelar'
         },

@@ -3,35 +3,19 @@ import { api } from 'boot/axios'
 
 const state = {
   token: '',
-  produtos: [],
-  produtoSelecionado: '',
   mensagens: [],
-  mensagemSelecionado: ''
+  mensagemSelecionado: '',
+  carrossels: [],
+  carrosselSelecionado: '',
+  items: [],
+  itemSelecionado: '',
 }
 
 const mutations = {
   SET_TOKEN (state, token) {      
     state.token = token
   },
-  SET_PRODUTOS (state, produtos) {
-    state.produtos = produtos
-  },
-  SELECIONAR_PRODUTO (state, produtoId) {
-    const index = state.produtos.findIndex((p) => p.id === produtoId)
-    state.produtoSelecionado = state.produtos[index]
-  },
-  ADICIONAR_PRODUTO (state, produto) {
-    state.produtos.push(produto)
-  },
-  ALTERAR_PRODUTO (state, produto) {
-    const index = state.produtos.findIndex((p) => p.id === produto.id)
-    state.produtos.set(index, produto)
-  },
-  REMOVER_PRODUTO (state, produtoId) {
-    const index = state.produtos.findIndex((p) => p.id === produtoId)
-    state.produtos.splice(index, 1)
-  },
-  SET_MENSAGENS (state, mensagens) {
+ SET_MENSAGENS (state, mensagens) {
     state.mensagens = mensagens
   },
   SELECIONAR_MENSAGEM (state, mensagemId) {
@@ -48,7 +32,43 @@ const mutations = {
   REMOVER_MENSAGEM (state, mensagemId) {
     const index = state.mensagens.findIndex((m) => m.id === mensagemId)
     state.mensagens.splice(index, 1)
-  }
+  },
+  SET_CARROSSELS (state, carrossels) {
+    state.carrossels = carrossels
+  },
+  SELECIONAR_CARROSSEL (state, carrosselId) {
+    const index = state.carrossels.findIndex((c) => c.id === carrosselId)
+    state.carrosselSelecionado = state.carrossels[index]
+  },
+  ADICIONAR_CARROSSEL (state, carrossel) {
+    state.carrossels.push(carrossel)
+  },
+  ALTERAR_CARROSSEL (state, carrossel) {
+    const index = state.carrossels.findIndex((c) => c.id === carrossel.id)
+    state.carrossels.set(index, carrossel)
+  },
+  REMOVER_MENSAGEM (state, carrosselId) {
+    const index = state.carrossels.findIndex((c) => c.id === carrosselId)
+    state.carrossels.splice(index, 1)
+  },
+  SET_ITEMS (state, items) {
+    state.items = items
+  },
+  SELECIONAR_ITEM (state, itemId) {
+    const index = state.items.findIndex((i) => i.id === itemId)
+    state.itemSelecionado = state.items[index]
+  },
+  ADICIONAR_ITEM (state, item) {
+    state.items.push(item)
+  },
+  ALTERAR_ITEM (state, item) {
+    const index = state.items.findIndex((i) => i.id === item.id)
+    state.items.set(index, item)
+  },
+  REMOVER_ITEM (state, itemId) {
+    const index = state.items.findIndex((i) => i.id === itemId)
+    state.items.splice(index, 1)
+}
 }
 
 const actions = { 
@@ -88,34 +108,6 @@ const actions = {
       return response
     })    
   },
-  adicionarProduto ({ commit }, produto) {
-    api.post('/produto', produto)
-    .then((response) => {
-      commit('ADICIONAR_PRODUTO', response.data)
-      Notify.create({ color: 'positive', position: 'top', message: 'Produto Cadastrado!'})  
-    })
-  },
-  obterProdutos ({ commit }) {
-    api.get('/produto')
-    .then((response) => {
-      commit('SET_PRODUTOS', response.data)
-    })
-  },
-  selecionarProduto ({ commit }, produtoId) {
-    commit('SELECIONAR_PRODUTO', produtoId)
-  },
-  alterarProduto ({ commit }, produto) {
-    api.put('/produto/'+ produto.id, produto)
-    .then((response) => {
-      commit('ALTERAR_PRODUTO', response.data)
-    })
-  },
-  removerProduto({ commit }, produtoId) {
-    api.delete('/produto/'+ produtoId)
-    .then((response) => {
-      commit('REMOVER_PRODUTO', produtoId)
-    })
-  },
   adicionarMensagem ({ commit }, mensagem) {
     api.post('/mensagem', mensagem)
     .then((response) => {
@@ -143,15 +135,73 @@ const actions = {
     .then((response) => {
       commit('REMOVER_MENSAGEM', mensagemId)
     })
+  },
+  adicionarCarrossel ({ commit }, carrossel) {
+    api.post('/carrossel', carrossel)
+    .then((response) => {
+      commit('ADICIONAR_CARROSSEL', response.data)
+      Notify.create({ color: 'positive', position: 'top', message: 'Imagem de carrossel Cadastrada!'})  
+    })
+  },
+  obterCarrossels ({ commit }) {
+    api.get('/carrossel')
+    .then((response) => {
+      commit('SET_CARROSSELS', response.data)
+    })
+  },
+  selecionarCarrossel ({ commit }, carrosselId) {
+    commit('SELECIONAR_CARROSSEL', carrosselId)
+  },
+  alterarCarrossel ({ commit }, carrossel) {
+    api.put('/carrossel/'+ carrossel.id, carrossel)
+    .then((response) => {
+      commit('ALTERAR_CARROSSEL', response.data)
+    })
+  },
+  removerCarrossel({ commit }, carrosselId) {
+    api.delete('/carrossel/'+ carrosselId)
+    .then((response) => {
+      commit('REMOVER_CARROSSEL', carrosselId)
+    })
+  },
+  adicionarItem ({ commit }, item) {
+    api.post('/item', item)
+    .then((response) => {
+      commit('ADICIONAR_ITEM', response.data)
+      Notify.create({ color: 'positive', position: 'top', message: 'Item Cadastrada!'})  
+    })
+  },
+  obterItems ({ commit }) {
+    api.get('/item')
+    .then((response) => {
+      commit('SET_ITEMS', response.data)
+    })
+  },
+  selecionarItem ({ commit }, itemId) {
+    commit('SELECIONAR_ITEM', itemId)
+  },
+  alterarItem ({ commit }, item) {
+    api.put('/item/'+ item.id, item)
+    .then((response) => {
+      commit('ALTERAR_ITEM', response.data)
+    })
+  },
+  removerItem({ commit }, itemId) {
+    api.delete('/item/'+ itemId)
+    .then((response) => {
+      commit('REMOVER_ITEM', itemId)
+    })
   }
 }
 
 const getters = {
   token: (state) => state.token,
-  produtos: (state) => state.produtos,
-  produtoSelecionado: (state) => state.produtoSelecionado,
   mensagens: (state) => state.mensagens,
-  mensagemSelecionado: (state) => state.mensagemSelecionado
+  mensagemSelecionado: (state) => state.mensagemSelecionado,
+  carrossels: (state) => state.carrossels,
+  carrosselSelecionado: (state) => state.carrosselSelecionado,
+  items: (state) => state.items,
+  itemSelecionado: (state) => state.itemSelecionado
 }
 
 export default {
