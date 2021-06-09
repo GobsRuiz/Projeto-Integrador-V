@@ -2,42 +2,38 @@
   <q-page id="about" class="q-py-xl flex justify-center align-center">
         <section title="O QUE É O CENTRO DE DOAÇÕES?" class="q-pt-xl" id="sectioncreation">
         <div style="transform: scaleY(-1);">
-    <h1 id="organizations-title" class="text-h3 textColor-blue text-center q-mb-xl q-px-md">
-O QUE É O CENTRO DE DOAÇÕES?
-    </h1>
+    <h1 id="organizations-title" class="text-uppercase text-h3 textColor-blue text-center q-mb-xl q-px-md">
+O que é o Lar São Vicente de Paulo?    </h1>
     <div class="row justify-center q-py-xl">
     <img src="../assets/about/faqabout.svg" alt="">
 </div>
     <p class="text-center text-h5 text-weight-bolder">
-      O Centro de Doações é uma instituição voltada para facilitar a criação de campanhas
-e eventos voltados para arrecadação de fundos, o maior objetivo do CDD é poder
-dar mais visibilidade as campanhas, assim como também ser um local em que as pessoas
-possam ter mais informações sobre as instituições.
+O Asilo São Vicente de Paulo, é uma instituição de caridade situado na cidade de Taquaritinga/SP e tem como objetivo principal, atender da melhor forma os idosos que ali residem.
+
+Com diversas parcerias pela cidade e da região, hoje o asilo atende aproximadamente 100 idosos que necessitam de cuidados especiais e atenção especial que só os funcionário sabem propor.
     </p>
     </div>
     </section>
 
         <section title="COMO O CENTRO DE DOAÇÕES FOI CRIADO?" class="q-py-xl" id="sectionstory">
-    <h1 id="organizations-title" class="text-h3 textColor-blue text-center q-mb-xl q-px-md">
-COMO O CENTRO DE DOAÇÕES FOI CRIADO?
-    </h1>
+    <h1 id="organizations-title" class="text-uppercase text-h3 textColor-blue text-center q-mb-xl q-px-md">
+Como funciona o Lar?    </h1>
         <div class="row justify-center q-py-xl">
     <img src="../assets/about/readingabout.svg" alt="">
 </div>
     <p class="text-center text-h5 text-weight-bolder">
-      O CDD foi criado em 2021, e a ideia veio dos estudantes do curso de Sistemas para Internet do 5º
-semestre na Fatec Taquaritinga, a ideia teve origem como uma necessidade de tema
-para o desenvolvimento do Projeto Integrador V, e então os estudantes do grupo Esquadrão Suicida
-em uma reunião chegaram a conclusão de criar uma instituição que funcionasse como
-centralizadora de doações, para dar mais visibilidade as campanhas e as organizações beneficentes
+Temos mais de 100 idosos aos nossos cuidados e cada um contribui com 70% da aposentadoria. O restante é arcado pelo Lar. Graças a Deus e aos nossos parceiros, que nunca deixam de ajudar, nunca faltou alimentação e todas as necessidades dos internos são supridas.
     </p>
+        <p class="text-center text-h5 text-weight-bolder">
+O Lar, como toda instituição de caridade necessita de doações, portanto para toda e qualquer doação, seja alimentos, produtos de limpeza etc. Os funcionários recebem muito bem os doadores, e proporcionam uma visita nas instalações e com certeza, agradece do fundo do coração a ajuda. O endereço do Lar para visitas e doações é: Rua São José Nº 1149 – Vila Di Santi    </p>
+ 
     </section>
+
 
             <section title="OS VALORES DO CENTRO DE DOAÇÕES" class="q-py-xl" id="sectioncreation">
         <div style="transform: scaleY(-1);">
-    <h1 id="organizations-title" class="text-h3 textColor-blue text-center q-mb-xl q-px-md">
-OS VALORES DO CENTRO DE DOAÇÕES
-    </h1>
+    <h1 id="organizations-title" class="text-uppercase text-h3 textColor-blue text-center q-mb-xl q-px-md">
+Os valores do lar  </h1>
         <div class="row justify-center q-py-xl">
     <img src="../assets/about/meetingabout.svg" alt="">
 </div>
@@ -47,23 +43,15 @@ OS VALORES DO CENTRO DE DOAÇÕES
              <h3 class="text-h5 text-weight-bolder">ATENCIOSIDADE</h3>
            <q-icon name="far fa-eye text-light-blue-6" class="text-h1 q-pb-xl" />
           <p class="text-h6 text-weight-bold">
-            O Centro trata todas as instituições
-de forma atenciosa e analisa
-cada uma das campanhas 
-e organizações que pediram para serem divulgadas pessoalmente
-para aprovar somente as instituições que levam o 
-ato de ajudar a sério
+ Os idosos recebem cuidados 24 horas por dia para garantir sua segurança e saúde para uma melhor qualidade de vida.
           </p>
           </div>
 
   <div class="col-12 col-sm-5 col-md-3 items-center">
-                 <h3 class="text-h5 text-weight-bolder">SIMPLICIDADE</h3>
-           <q-icon name="far fa-handshake text-light-blue-6" class="text-h1 q-pb-xl" />
+                 <h3 class="text-h5 text-weight-bolder">ATIVIDADES</h3>
+          <i class="text-light-blue-6 fas fa-walking q-pb-xl" style="font-size: 85px; text-align: center;"></i>
           <p class="text-h6 text-weight-bold">
-            O Centro acredita que é de extrema
-importância manter os conteúdos o mais
-acessíveis e simples quanto possível para garantir
-a acessibilidade a todos os tipos de usuários
+O lar conta com várias atividades para os idosos tanto para uma melhor saúde e qualidade de vida quanto para o entretenimento.
           </p>
           </div>
 
@@ -71,11 +59,8 @@ a acessibilidade a todos os tipos de usuários
                            <h3 class="text-h5 text-weight-bolder">PROFISSIONALISMO</h3>
            <q-icon name="fas fa-id-card text-light-blue-6" class="text-h1 q-pb-xl" />
           <p class="text-h6 text-weight-bold">
- O Centro tem uma alta demanda
- por qualidade e transparência, por
- isso leva tem comprometimento 
-com os usuários e com as organizações e resolve as questões
-da forma mais direta e efetiva possível
+Aqui você pode contar com os melhores funcionários para o cuidado dos idosos, a equipe 
+além de capacitada e atenciosa faz seu serviço com muito amor.
           </p>
           </div>
 

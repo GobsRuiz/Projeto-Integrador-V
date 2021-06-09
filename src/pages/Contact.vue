@@ -13,8 +13,7 @@ ENTRE EM CONTATO COM A GENTE!
 
     <div class="col-md-6 col-sm-12 q-py-xl">
         <p class="text-center q-mx-md text-h5 text-weight-bolder">
-Deseja ter sua instituição divulgada aqui?
-Entre em contato através de uma das
+Entre em contato com a gente também através do nosso e-mail ou uma das
 redes sociais abaixo:
     </p>
     <img src="../assets/contact/imgcontato.svg" alt="">

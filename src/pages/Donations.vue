@@ -10,7 +10,7 @@ nossos vovôs e vovós.
 
 <div class="row">
 
-<div class="col-4 q-py-xl">
+<div class="col-sm-12 col-md-4 q-py-xl">
 <p class="text-h5 text-center text-weight-bold text-blue">DEPÓSITO OU TRANSFERÊNCIA BANCÁRIA:</p>
 
     <p class="text-center"><img src="../assets/index/campaings/idosos.svg" alt="" style="height:260px; width: 260px"></p>
@@ -24,11 +24,11 @@ AGÊNCIA: XXXX
 </div>
 
 
-<div class="col-4">
+<div class="col-sm-12 col-md-4">
 <h2 class="text-center text-blue text-weight-bold">OU</h2>
 </div>
 
-<div class="col-4 q-py-xl">
+<div class="col-sm-12 col-md-4 q-py-xl">
   <p class="text-h5 text-center text-weight-bold text-blue">DOE PELO PIX ATRAVES DO QRCODE ABAIXO</p>
 
     <p class="text-center"><img src="../assets/index/campaings/qrcode.png" alt="" style="height:270px;"></p>
@@ -41,7 +41,7 @@ Ou use nossa chave PIX que é nosso CNPJ: 08.052.116/0001-86
 </div>
 
 
-      <h3 class="text-center text-blue q-py-md">LISTA DE ITENS NECESSITADOS PELOS RESIDENTES</h3>
+      <h3 class="text-center text-blue q-py-md">LISTA DE ITENS NECESSÁRIOS PARA OS RESIDENTES</h3>
 
 <p class="text-h5 text-center text-weight-bold">
   Você pode doar o valor pela nossa conta corrente, ou pelo nosso pix,
@@ -53,7 +53,6 @@ Ou use nossa chave PIX que é nosso CNPJ: 08.052.116/0001-86
  <div class="q-pa-xl">
  <q-table card-class="bg-light-blue-5 text-weight-bold text-uppercase" hide-bottom :data="items" bordered
   class="responsive text-center" separator="cell"
-  :columns="columns"
   >
    <tr slot="header" class="bg-grey-4">
        <q-th>
