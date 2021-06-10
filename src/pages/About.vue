@@ -8,9 +8,10 @@ O que é o Lar São Vicente de Paulo?    </h1>
     <img src="../assets/about/faqabout.svg" alt="">
 </div>
     <p class="text-center text-h5 text-weight-bolder">
-O Asilo São Vicente de Paulo, é uma instituição de caridade situado na cidade de Taquaritinga/SP e tem como objetivo principal, atender da melhor forma os idosos que ali residem.
+O Asilo São Vicente de Paulo, é uma instituição de caridade situada na cidade de Taquaritinga/SP e tem como objetivo principal, atender da melhor forma possível os idosos que ali residem.
 
-Com diversas parcerias pela cidade e da região, hoje o asilo atende aproximadamente 100 idosos que necessitam de cuidados especiais e atenção especial que só os funcionário sabem propor.
+Com diversas parcerias pela cidade e da região, hoje o asilo atende aproximadamente 100 idosos que necessitam de atenção e cuidados especiais, idosos esses que são cuidados pelos funcionários que estão
+sempre dispostos a os tratar com carinho.
     </p>
     </div>
     </section>
@@ -22,10 +23,10 @@ Como funciona o Lar?    </h1>
     <img src="../assets/about/readingabout.svg" alt="">
 </div>
     <p class="text-center text-h5 text-weight-bolder">
-Temos mais de 100 idosos aos nossos cuidados e cada um contribui com 70% da aposentadoria. O restante é arcado pelo Lar. Graças a Deus e aos nossos parceiros, que nunca deixam de ajudar, nunca faltou alimentação e todas as necessidades dos internos são supridas.
+Temos mais de 100 idosos aos nossos cuidados e cada um contribui com 70% da aposentadoria. O restante é arcado pelo Lar e arrecadado por meio de doações. Graças a Deus e aos nossos parceiros, que nunca deixam de ajudar, nunca faltou alimentação e todas as necessidades dos internos são supridas.
     </p>
         <p class="text-center text-h5 text-weight-bolder">
-O Lar, como toda instituição de caridade necessita de doações, portanto para toda e qualquer doação, seja alimentos, produtos de limpeza etc. Os funcionários recebem muito bem os doadores, e proporcionam uma visita nas instalações e com certeza, agradece do fundo do coração a ajuda. O endereço do Lar para visitas e doações é: Rua São José Nº 1149 – Vila Di Santi    </p>
+O Lar, como toda instituição de caridade necessita de doações, portanto para toda e qualquer doação, seja alimentos, produtos de limpeza etc. Os funcionários recebem muito bem os doadores, e proporcionam uma visita nas instalações e com certeza, agradece do fundo do coração a ajuda. O Lar fica localizado na Rua São José Nº 1149 – Vila Di Santi    </p>
  
     </section>
 
@@ -43,7 +44,7 @@ Os valores do lar  </h1>
              <h3 class="text-h5 text-weight-bolder">ATENCIOSIDADE</h3>
            <q-icon name="far fa-eye text-light-blue-6" class="text-h1 q-pb-xl" />
           <p class="text-h6 text-weight-bold">
- Os idosos recebem cuidados 24 horas por dia para garantir sua segurança e saúde para uma melhor qualidade de vida.
+ Os idosos recebem cuidados 24 horas por dia para garantir sua segurança, saúde e para uma melhor qualidade de vida.
           </p>
           </div>
 
@@ -51,7 +52,7 @@ Os valores do lar  </h1>
                  <h3 class="text-h5 text-weight-bolder">ATIVIDADES</h3>
           <i class="text-light-blue-6 fas fa-walking q-pb-xl" style="font-size: 85px; text-align: center;"></i>
           <p class="text-h6 text-weight-bold">
-O lar conta com várias atividades para os idosos tanto para uma melhor saúde e qualidade de vida quanto para o entretenimento.
+O lar conta com várias atividades para os idosos, tanto para uma melhor saúde e qualidade de vida, quanto para o entretenimento.
           </p>
           </div>
 

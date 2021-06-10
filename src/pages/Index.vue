@@ -1,9 +1,6 @@
 <template>
   <q-page>
-    <div class="q-pa-md column">
-        <q-btn id="divulgation-content-btn" to="/en-us" color="white q-px-xl q-py-md" rounded class="text-black" label="Versão em inglês" size="22px" />
-    </div>
-        <!-- Carousel -->
+         <!-- Carousel -->
     <q-carousel
       animated
       v-model="slide"
@@ -19,43 +16,34 @@
       <q-carousel-slide class="carousel-slide flex justify-center items-center" name="first" img-src="../assets/carousel/alimentosee.png">
         <div class="carousel-slide-content text-center q-px-xl">
           <div class="text-h2 text-white">Ajude quem mais precisa!</div>
-          <p class="text-subtitle1 text-white">Ajude a igreja Santa Madalena a arrecadar alimentos para moradores de rua nesse inverno.</p>
-          <q-btn color="white" to="/contato" style="border-radius: 15px;" class="text-red q-py-md" label="clique para participar"></q-btn>
+          <p class="text-subtitle1 text-white">Ajude o Lar arrecadar alimentos para os nossos queridos veteranos</p>
+          <q-btn color="white" to="/doacoes" style="border-radius: 15px;" class="text-red q-py-md" label="clique para participar"></q-btn>
         </div>
       </q-carousel-slide>
        <q-carousel-slide  v-for="carrossel in carrossels" :name="carrossel.position" :key="carrossel.id" class="flex justify-center items-center" :img-src="`/images/carousel/${carrossel.img}`">
         <div class="text-center" style="width: 30%">
           <div class="text-h2 text-white">{{carrossel.titulo}}</div>
           <p class="text-subtitle1 text-white">{{carrossel.texto}}</p>
-          <q-btn color="white" style="border-radius: 15px;" class="text-red q-py-md" label="clique para participar"></q-btn>
+          <q-btn color="white" to="/doacoes" style="border-radius: 15px;" class="text-red q-py-md" label="clique para participar"></q-btn>
         </div>
       </q-carousel-slide>
     </q-carousel>
 
     <!-- Campaigns -->
-    <section id="campaigns" class="q-mb-xl">
-      <!-- Section title -->
-      <h1 class="text-h4 text-center text-light-blue-6 text-uppercase q-mb-xl q-py-xl">
-        Campanhas mais populares da semana
-      </h1>
-
-      <!-- Texts and image -->
-      <div class="cards row justify-around" id="campaigns-cards">
-        <!-- Campaign -->
-        <div class="campaigns-card text-center col-sm-5 q-py-lg col-md-3 q-pa-sm" v-for="campaign in campaigns" :key="campaign">
-          <a href="/#/campanha/agasalho" style="text-decoration: none;">
-          <h3 class="text-red text-h5">
-            {{campaign.title}}
-          </h3>
-          <p class="text-subtitle1"> 
-            {{campaign.subtitle}}
-          </p>
-          <q-avatar size="200px" rounded>
-          <img :src="`/images/campaings/${campaign.src}`" class="card-img">
-          </q-avatar>
-          </a>
-        </div>
+      <section title="O QUE É O CENTRO DE DOAÇÕES?" class="q-py-xl" id="sectioncreation">
+        <div style="transform: scaleY(-1);">
+    <h1 id="organizations-title" class="text-uppercase text-h3 textColor-blue text-center q-mb-xl q-px-md">
+O que é o Lar São Vicente de Paulo?    </h1>
+    <div class="row justify-center q-py-sm">
+    <img src="../assets/about/faqabout.svg" alt="">
+</div>
+    <section class="flex justify-center items-center q-py-xs">
+      <!-- Content -->
+      <div class="text-center">
+        <q-btn to="/contato" color="white q-px-xl q-py-md" rounded class="text-black" label="clique aqui para descobrir" size="22px" />
       </div>
+    </section>
+    </div>
     </section>
 
     <!-- Divulgation -->
@@ -106,6 +94,17 @@ export default {
 </script>
 
 <style scoped>
+
+  #sectioncreation{
+  background-image: url("../assets/header/background-menu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+    transform: scaleY(-1);
+  }
+
+  #sectioncreation img, #sectionstory img{
+  width: 350px;  
+  }
 /* Carousel */
 .carousel-slide{
   background-size: 100% 100%;

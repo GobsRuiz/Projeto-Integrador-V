@@ -112,7 +112,7 @@ const actions = {
     api.post('/mensagem', mensagem)
     .then((response) => {
       commit('ADICIONAR_MENSAGEM', response.data)
-      Notify.create({ color: 'positive', position: 'top', message: 'Mensagem Enviada!'})  
+      Notify.create({ color: 'positive', position: 'top', message: 'Mensagem enviada com sucesso!'})  
     })
   },
   obterMensagens ({ commit }) {
@@ -140,7 +140,7 @@ const actions = {
     api.post('/carrossel', carrossel)
     .then((response) => {
       commit('ADICIONAR_CARROSSEL', response.data)
-      Notify.create({ color: 'positive', position: 'top', message: 'Imagem de carrossel Cadastrada!'})  
+      Notify.create({ color: 'positive', position: 'top', message: 'Imagem de carrossel cadastrada com sucesso!'})  
     })
   },
   obterCarrossels ({ commit }) {
@@ -168,7 +168,7 @@ const actions = {
     api.post('/item', item)
     .then((response) => {
       commit('ADICIONAR_ITEM', response.data)
-      Notify.create({ color: 'positive', position: 'top', message: 'Item Cadastrada!'})  
+      Notify.create({ color: 'positive', position: 'top', message: 'Item cadastrado com sucesso!'})  
     })
   },
   obterItems ({ commit }) {

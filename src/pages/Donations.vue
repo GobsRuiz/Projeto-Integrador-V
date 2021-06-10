@@ -33,7 +33,7 @@ AGÊNCIA: XXXX
 
     <p class="text-center"><img src="../assets/index/campaings/qrcode.png" alt="" style="height:270px;"></p>
     <p class="text-h5 text-center text-weight-bold text-uppercase">
-Ou use nossa chave PIX que é nosso CNPJ: 08.052.116/0001-86
+Ou use nossa chave PIX, que é nosso CNPJ: 08.052.116/0001-86
 
 </p>
 </div>
@@ -44,8 +44,7 @@ Ou use nossa chave PIX que é nosso CNPJ: 08.052.116/0001-86
       <h3 class="text-center text-blue q-py-md">LISTA DE ITENS NECESSÁRIOS PARA OS RESIDENTES</h3>
 
 <p class="text-h5 text-center text-weight-bold">
-  Você pode doar o valor pela nossa conta corrente, ou pelo nosso pix,
-  você pode visualizar ambos na seção de doações, ou então você pode
+  Você pode doar o valor pela nossa conta corrente, ou pelo nosso pix,, ou então você pode
   doar diretamente no asilo, endereço na página de contato.
 
 </p>
