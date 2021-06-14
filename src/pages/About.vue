@@ -1,6 +1,9 @@
 <template>
   <q-page id="about" class="q-py-xl flex justify-center align-center">
-        <section title="O QUE É O CENTRO DE DOAÇÕES?" class="q-pt-xl" id="sectioncreation">
+               <div class="q-pa-md column">
+        <q-btn id="divulgation-content-btn" to="/about" color="white q-px-xl q-py-md" rounded class="text-black" label="Página em inglês" size="22px" />
+    </div>
+        <section title="O QUE É O CENTRO DE DOAÇÕES?" class="q-py-xl" id="sectioncreation">
         <div style="transform: scaleY(-1);">
     <h1 id="organizations-title" class="text-uppercase text-h3 textColor-blue text-center q-mb-xl q-px-md">
 O que é o Lar São Vicente de Paulo?    </h1>

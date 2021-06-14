@@ -27,7 +27,7 @@
 
         <div class="mobile-hide">
           <q-btn to="/" label="Home" flat rounded class="text-h5"></q-btn>
-          <q-btn to="/campanhas" label="Campaigns" flat rounded class="text-h5"></q-btn>
+          <q-btn to="/campanhas" label="Donations" flat rounded class="text-h5"></q-btn>
           <q-btn to="/contato" label="Contact Us" flat rounded class="text-h5"></q-btn>
           <q-btn to="/sobre" label="About Us" flat rounded class="text-h5"></q-btn>
         </div>
@@ -80,9 +80,8 @@
       <div id="footer-content" class="flex items-center justify-between bg-primary q-pa-md">
         <!-- Links || menu -->
         <nav id="footer-content-menu" class="flex column">
-          <q-btn to="/" label="Início" flat rounded class="text-h6"></q-btn>
-          <q-btn to="/sobre" label="Organizations" flat rounded class="text-h6"></q-btn>
-          <q-btn to="/sobre" label="Campaigns" flat rounded class="text-h6"></q-btn>
+          <q-btn to="/" label="Home" flat rounded class="text-h6"></q-btn>
+          <q-btn to="/sobre" label="Donations" flat rounded class="text-h6"></q-btn>
           <q-btn to="/sobre" label="Contact Us" flat rounded class="text-h6"></q-btn>
           <q-btn to="/sobre" label="About Us" flat rounded class="text-h6"></q-btn>
         </nav>  
@@ -107,7 +106,7 @@
       <!-- Copyright -->
       <div id="footer-copyright" class="q-py-lg q-px-md">
         <p class="text-black text-center text-h4 q-ma-none">
-          Centro de doações - 2021 - All rights reserved ©
+          Lar São Vicente de Paulo - 2021 - All rights reserved ©
         </p>
       </div>
     </q-footer>
@@ -119,27 +118,22 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksData = [
   {
-    title: 'Inicio',
+    title: 'Home',
     icon: 'home',
     link: '/'
   },
   {
-    title: 'Organizações',
+    title: 'Donations',
     icon: 'code',
     link: '/#/organizações'
   },
   {
-    title: 'Campanhas',
+    title: 'Contact Us',
     icon: 'chat',
     link: '/#/campanhas'
   },
   {
-    title: 'Contato',
-    icon: 'code',
-    link: '/#/contato'
-  },
-  {
-    title: 'Sobre',
+    title: 'About Us',
     icon: 'code',
     link: '/#/sobre'
   },

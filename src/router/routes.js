@@ -15,10 +15,10 @@ const routes = [
     ]
   },
   {
-    path: '/en-us',
+    path: '/about',
     component: () => import('layouts/EnglishLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/HomeEnUS.vue') }
+      { path: '', component: () => import('pages/AboutEnUS.vue') }
     ]
   },
   {
